@@ -1,0 +1,46 @@
+<app:FluentWindow xmlns="https://github.com/avaloniaui"
+              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+              xmlns:app="clr-namespace:MenacorNebel.App"
+              xmlns:viewModels="clr-namespace:MenacorNebel.App.ViewModels"
+              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+              Height="450"
+              Width="800"
+              x:Class="MenacorNebel.App.Views.MainWindow"
+              Title="MenacorNebel.App">
+    <app:FluentWindow.Styles>
+        <Style Selector="TitleBar:fullscreen">
+            <Setter Property="Background" Value="#7f000000" />
+        </Style>
+    </app:FluentWindow.Styles>
+    <Design.DataContext>
+        <viewModels:MainWindowViewModel/>
+    </Design.DataContext>
+
+    <Panel>
+        <Panel>
+            <DockPanel HorizontalAlignment="Stretch">
+                <ExperimentalAcrylicBorder DockPanel.Dock="Left" Width="240">
+                    <ExperimentalAcrylicBorder.Material>
+                        <ExperimentalAcrylicMaterial TintColor="Black" MaterialOpacity="0.85" TintOpacity="1" />
+                    </ExperimentalAcrylicBorder.Material>
+                    <Label HorizontalAlignment="Center" Margin="20 40 20 0" Content="Menacor Nebel Sichter"></Label>
+                </ExperimentalAcrylicBorder>
+                <ExperimentalAcrylicBorder IsHitTestVisible="False">
+                    <ExperimentalAcrylicBorder.Material>
+                        <ExperimentalAcrylicMaterial TintColor="#222222" MaterialOpacity="0.85" TintOpacity="1" />
+                    </ExperimentalAcrylicBorder.Material>
+                    <TextBlock Text="{Binding #TabControl.SelectedItem.Header}" Margin="40 20" FontSize="32" FontWeight="Light" />
+                </ExperimentalAcrylicBorder>
+            </DockPanel>          
+       
+            <TabControl x:Name="TabControl" Classes="sidebar" Margin="0 40 0 20">
+                <TabItem Header="Benutzerstatistik">
+                </TabItem>
+                <TabItem Header="Abenteuerstatistik">
+                </TabItem>
+            </TabControl>    
+        </Panel>
+    </Panel>
+</app:FluentWindow>

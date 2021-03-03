@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenacorNebelScanner", "MenacorNebelScanner\MenacorNebelScanner.csproj", "{8C380465-4361-4A50-9D9D-5227610F4AAE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenacorNebel.App", "MenacorNebel.App\MenacorNebel.App.csproj", "{FDE704CF-D59B-4A79-8F4E-CBEC8C52B7FB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{8C380465-4361-4A50-9D9D-5227610F4AAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C380465-4361-4A50-9D9D-5227610F4AAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C380465-4361-4A50-9D9D-5227610F4AAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDE704CF-D59B-4A79-8F4E-CBEC8C52B7FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDE704CF-D59B-4A79-8F4E-CBEC8C52B7FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDE704CF-D59B-4A79-8F4E-CBEC8C52B7FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDE704CF-D59B-4A79-8F4E-CBEC8C52B7FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

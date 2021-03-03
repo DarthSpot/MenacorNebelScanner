@@ -10,7 +10,6 @@ namespace MenacorNebelScanner
     {
         static void Main(string[] args)
         {
-            args = new[] {"-f", "13", "-t", "44833", "-o", "sternenlosenacht.txt"};
             if (!args.Any())
             {
                 PrintHelp();
