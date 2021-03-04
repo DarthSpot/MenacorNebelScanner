@@ -21,4 +21,7 @@
       <None Remove="Styles\SideBar.xaml" />
       <AvaloniaXaml Include="Styles\SideBar.xaml" />
     </ItemGroup>
+    <ItemGroup>
+        <AvaloniaResource Include="Assets\**" />
+    </ItemGroup>
 </Project>
